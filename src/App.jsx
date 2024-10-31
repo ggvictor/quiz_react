@@ -16,12 +16,6 @@ import './App.css';
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
 
-  useEffect(() =>{
-    // embaralhar as perguntas
-    dispatch({type: "REORDER_QUESTIONS"})
-  }, []);
-
-
   return (
     <div className='App'>
       <h1>Quiz de programação</h1>
