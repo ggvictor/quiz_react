@@ -104,7 +104,7 @@ const quizReducer = (state, action) =>{
             return{
                 ...state,
                 optionToHide,
-                help: true
+                help: true,
             }
 
         default:

@@ -24,9 +24,10 @@ const Question = () => {
       <h2>{currentQuestion.question}</h2>
       <div id="options-container">
         {currentQuestion.options.map((option) => (
-          <Option option = {option} key = {option} answer = {currentQuestion.answer} selectOption = {() => onSelectOption(option)} hide = {quizState.optiontoHide === option ? "hide" : null}/> 
+          <Option option = {option} key = {option} answer = {currentQuestion.answer} selectOption = {() => onSelectOption(option)} hide = {quizState.optionToHide === option ? "hide" : null}/> 
         ))}
       </div>
+      
       {!quizState.answerSelected && !quizState.help &&(
         <>
           {currentQuestion.tip && (
